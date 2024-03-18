@@ -9,8 +9,8 @@ const AxiosGet = async () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:7700/koodari/");
-        console.log("Response from server:", res.data); // Debugging: log response data
+        const res = await axios.get("http://localhost:7700/people/");
+        console.log("Response from server:", res.data);
         setCoders(res.data);
         setLoading(false);
       } catch (err) {
