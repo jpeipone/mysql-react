@@ -67,7 +67,7 @@ app.put("/people/:id", (req, res) => {
 
 app.delete("/deletePeople/:id", (req, res) => {
   const id = Number(req.params.id);
-  console.log(id);
+  console.log("server delete people ", id);
   db.query(
     "DELETE FROM people WHERE PeopleId = ?",
     [id],

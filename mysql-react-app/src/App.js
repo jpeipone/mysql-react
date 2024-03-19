@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import TestFile from "./fetch/TestFile";
-import NewData from "./fetch/NewData";
-import AxiosGet from "./fetch/AxiosGet";
+
+import PeopleData from "./fetch/PeopleData";
 
 function App() {
   return (
     <div className="App">
       hello
-      <NewData />
+      <PeopleData />
     </div>
   );
 }
